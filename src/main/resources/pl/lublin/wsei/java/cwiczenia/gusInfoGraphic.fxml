@@ -1,16 +1,319 @@
-<?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="pl.lublin.wsei.java.cwiczenia.Controller">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<!DOCTYPE html>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello world" onAction="#onHelloButtonClick"/>
-</VBox>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	GUS - Bank Danych Lokalnych
+</title><link rel="shortcut icon" href="https://bdl.stat.gov.pl/bdl/favicon.ico" /><meta http-equiv="X-UA-Compatible" content="IE=11;IE=edge" />
+<link href="../App_Themes/Light/LightNew.css" type="text/css" rel="stylesheet" /><link href="/bdl/Telerik.Web.UI.WebResource.axd?d=PMrIT5dOWaVYIcpFWUE4nNXBr8KEWQ6y55zZvDD0AMsLxtNZlaBT2xZRXAFAL00q5eGWB5xdqZ6RhbrQIXEXOWBnonfEx_mGDH3nwPLD6cMT4hYH0&amp;t=637771450903444779&amp;compress=2&amp;_TSM_CombinedScripts_=%3b%3b%7c637747370477927469%3a2cc223ef%3bTelerik.Web.UI%2c+Version%3d2017.3.913.45%2c+Culture%3dneutral%2c+PublicKeyToken%3d121fae78165ba3d4%3apl-PL%3a03e3fdef-45f6-40a0-88ab-9645d53a0f37%3ad7e35272%3a505983de%3a3e0dfe6c%3ae7750fd8%3ae347b32f%3aa942ad92%3ab256253d%3a6e804bb4%3aa957bcf1%3ace6e779%3aba1b8630%3aca0174c4" type="text/css" rel="stylesheet" /></head>
+<body class="normal simple" onkeydown="return (event.keyCode!=13)">
+    <form method="post" action="#" id="aspnetForm" class="mainForm">
+<div class="aspNetHidden">
+<input type="hidden" name="ctl00_StyleManager_TSSM" id="ctl00_StyleManager_TSSM" value="" />
+<input type="hidden" name="ctl00_MainScriptManager_TSM" id="ctl00_MainScriptManager_TSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="tjgV685A4brMKyxwtBirRbg/Ao1OC0G+DBKpqOluI/PMSjEkoywVA3oa43kIM/Z1fuYfmqunhY82SPMWfn7FHIdyAaJGSUdy+awfwrsbqasc/kfT8e4JXHY7kSMvRNP2T+s/aBtYRov+m+lJkstmFTilMcVV238wzxhVVEb9yEA6A1LoYVprjx5+pHByHzlsWExHbYt/L1lt71DUdOye1pGvMLzC6sil9mHjMTbYHgyLf0+EVVTP1luM8vIK58wimHNmFA4wp36zj4O9MDCb0yXoe7Fb9Ycxm/0o7NocMpyzj2PrHHPn1kGCjbTln/CRgD3YnfJIEybv8iWWvQgOTlpUqHI=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/bdl/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZI9D70rHBXVP_3jbk_ruR4s7nbY_JdjwAEWQj7Xfqrv8Prqqig2&amp;t=637771450904538423" type="text/javascript"></script>
+
+
+<script src="/bdl/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ctl00_MainScriptManager_TSM&amp;compress=2&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3apl-PL%3a9ead301a-2c07-4fc5-be19-f8423a34e117%3aea597d4b%3ab25378d2%3bTelerik.Web.UI%3apl-PL%3a03e3fdef-45f6-40a0-88ab-9645d53a0f37%3a16e4e7cd%3af7645509%3a22a6274a%3a24ee1bba%3af46195d3%3a874f8ea2%3ab2e06756%3a92fe8ea0%3afa31b949%3a4877f69a%3a33715776%3ac128760b%3a19620875%3a490a9d4e%3abd8f85e4%3a86526ba7%3acda80b3%3a383e4ce8%3aed16cbdc%3a1e771326%3a88144a7a%3a8c2d243e%3a6d43f6d9%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3apl-PL%3a9ead301a-2c07-4fc5-be19-f8423a34e117%3a76254418" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6D4269FA" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="g4T6MwE7Mvgt6XiDQfyrMygNT21Lm253m0wfNR1OZpGjecq3vWcktyaS3RG4XRIFY9h+OVnqzT/7mJfOmbYVJxsloZqI2SlDsg5TIPaYFAUy70Qq33/tYiB1GE9/u6uEdRSOxQ==" />
+</div>
+    
+        <script type="text/javascript">
+                
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-75153058-1', 'auto');        
+            ga('send', 'pageview');
+                        
+            function createCookie(name, value, days) {
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    var expires = "; expires=" + date.toGMTString();
+                }
+                else var expires = "";
+                document.cookie = name + "=" + value + expires + "; path=/";
+            }
+            function readCookie(name) {
+                var nameEQ = name + "=";
+                var ca = document.cookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            }
+            function eraseCookie(name) {
+                createCookie(name, "", -1);
+            }
+            function linkButtonClicking(button, args) {
+                window.location = button.get_navigateUrl();
+                args.set_cancel(true);
+            }
+            (function ($) {
+                $(document).ready(function () {
+                    var read = readCookie("cookie-accepted");                    
+                    if (!read || read != "true") {                        
+                        createCookie("cookie-accepted", "true", 365);
+                        $("#CookieInfo").show();
+                    }
+                });
+            })($telerik.$);
+	    </script>    
+    
+
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$MainScriptManager', 'aspnetForm', ['tctl00$MainToolTipManRTMPanel','','tctl00$ctl00$SessionTickerPanelPanel','','tctl00$MainAjaxManagerSU',''], ['ctl00$SessionTicker',''], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div id="ctl00_MainWindowMan" style="display:none;">
+	<!-- 2017.3.913.45 --><div id="ctl00_MainWindowMan_alerttemplate" style="display:none;">
+		<div class="rwDialog rwAlertDialog">
+			<div class="rwDialogContent">
+				<div class="rwDialogMessage">{1}</div>
+			</div>
+			<div class="rwDialogButtons">
+				<button type="button" class="rwOkBtn" onclick="$find('{0}').close(true); return false;">##LOC[OK]##</button>
+			</div>
+		</div>
+		</div><div id="ctl00_MainWindowMan_prompttemplate" style="display:none;">
+		<div class="rwDialog rwPromptDialog">
+			<div class="rwDialogContent">
+				<div class="rwDialogMessage">{1}</div>
+				<div class="rwPromptInputContainer">
+					<script type="text/javascript">
+						function RadWindowprompt_detectenter(id, ev, input) {
+							if (!ev) ev = window.event;
+							if (ev.keyCode == 13) {
+								var but = input.parentNode.parentNode.parentNode.getElementsByTagName("button")[0];
+								if (but) {
+									if (but.click) {
+										but.click();
+									}
+									else if (but.onclick) {
+										but.focus();
+										var click = but.onclick;
+										but.onclick = null;
+										if (click) click.call(but);
+									}
+								}
+								return false;
+							}
+							else return true;
+						}
+					</script>
+					<input title="Enter Value" onkeydown="return RadWindowprompt_detectenter('{0}', event, this);" type="text" class="rwPromptInput radPreventDecorate" value="{2}" />
+				</div>
+			</div>
+			<div class="rwDialogButtons">
+				<button type="button" class="rwOkBtn" onclick="$find('{0}').close(this.parentNode.parentNode.getElementsByTagName('input')[0].value); return false;">##LOC[OK]##</button>
+				<button type="button" class="rwCancelBtn" onclick="$find('{0}').close(null); return false;">##LOC[Cancel]##</button>
+			</div>
+		</div>
+		</div><div id="ctl00_MainWindowMan_confirmtemplate" style="display:none;">
+		<div class="rwDialog rwConfirmDialog">
+			<div class="rwDialogContent">
+				<div class="rwDialogMessage">{1}</div>
+			</div>
+			<div class="rwDialogButtons">
+				<button type="button" class="rwOkBtn" onclick="$find('{0}').close(true); return false;">##LOC[OK]##</button>
+				<button type="button" class="rwCancelBtn" onclick="$find('{0}').close(false); return false;">##LOC[Cancel]##</button>
+			</div>
+		</div>
+		</div><input id="ctl00_MainWindowMan_ClientState" name="ctl00_MainWindowMan_ClientState" type="hidden" />
+</div>
+    <div id="ctl00_MainFormDecorator" class="RadFormDecorator" style="display:none;">
+	<script type="text/javascript">
+//<![CDATA[
+
+if (typeof(WebForm_AutoFocus) != 'undefined' && !isWebFormAutoFocusMethodCalled)
+{   
+	var old_WebForm_AutoFocus = WebForm_AutoFocus;
+	WebForm_AutoFocus = function(arg)
+	{
+		Sys.Application.add_load(function()
+		{            
+			old_WebForm_AutoFocus(arg);
+			WebForm_AutoFocus = old_WebForm_AutoFocus;
+		});
+	}
+    var isWebFormAutoFocusMethodCalled = true;
+}
+if (typeof(Telerik) != 'undefined' && Type.isNamespace(Telerik.Web))
+{
+	if (Telerik.Web.UI.RadFormDecorator)
+	{
+		Telerik.Web.UI.RadFormDecorator.initializePage("ctl00_MainFormDecorator", "", "Default", 57343);
+	}
+}
+//]]>
+</script><input id="ctl00_MainFormDecorator_ClientState" name="ctl00_MainFormDecorator_ClientState" type="hidden" />
+</div>
+    <div id="ctl00_MainToolTipMan" class="ttipAuto" style="display:none;position:absolute;">
+	<div id="ctl00_MainToolTipManRTMPanel">
+
+	</div><input id="ctl00_MainToolTipMan_ClientState" name="ctl00_MainToolTipMan_ClientState" type="hidden" />
+</div>
+    <div id="ctl00_MainAjaxManagerSU">
+	<span id="ctl00_MainAjaxManager" style="display:none;"></span>
+</div>
+    
+   
+    <div id="CookieInfo" style="display:none;">
+        
+            <div class="text">Nasza strona internetowa używa plików cookies (tzw. ciasteczka) w celach statystycznych oraz funkcjonalnych. Dzięki nim możemy indywidualnie dostosować stronę do twoich potrzeb. Każdy może zaakceptować pliki cookies albo ma możliwość wyłączenia ich w przeglądarce, dzięki czemu nie będą zbierane żadne informacje.</div>
+            <div class="close">
+                <a href="#" onclick='$("#CookieInfo").hide();'>Zrozumiałem, zamknij ten komunikat</a>
+            </div>
+        
+    </div>
+    <div id="MainWrapper">
+
+        <div id="MainhHeader">
+            <div id="LinksWrapper">                
+                
+                    <div style="display:inline-block" class="dataState">
+                        <span>                                            
+                            Dane wg stanu na 2022.06.02
+                        </span>                    
+                    </div>
+                    <div class="right">                           
+                        
+                                Użytkownik: Gość                                               
+                            
+                    </div>
+                  
+            </div>
+            <div id="NavigationWrapper">
+                <div id="ctl00_MainMenu" class="RadNavigation RadNavigation_Default">
+	<div class="rnvRootGroupWrapper">
+		<ul class="rnvRootGroup rnvGroup">
+			<li class="rnvItem rnvFirst rnvLast rnvSelected logo logoPL"><div class="rnvRootLink rnvLink rnvTemplate">
+				
+                                <a href='/bdl/start'>Strona główna</a>                    
+                            
+			</div></li>
+		</ul>
+	</div><div class="rnvHiddenGroups">
+		
+	</div><input id="ctl00_MainMenu_ClientState" name="ctl00_MainMenu_ClientState" type="hidden" />
+</div>
+            </div>
+        </div>        
+        <div id="MainContent">
+            
+
+            
+
+    
+        
+        <div style='margin:20px 0 20px;background:url(/bdl/img/magnifier-4-400x200-gray.png) 100% 0 no-repeat;min-height:300px;'>
+
+            <p style="margin:0 210px 20px 0;">
+                Żądana strona jest niedostępna. Podałeś nieaktualny adres strony lub odwołujacy się do nieistniejących danych. W razie wątpliwości skontaktuj się z zespołem BDL pisząc na adres <a href="mailto:bdl.kontakt@stat.gov.pl">bdl.kontakt@stat.gov.pl</a>
+            </p>
+
+            <button type="submit" name="ctl00$ContentPlaceHolder$homeButton" value="Powrót do strony głównej" id="ctl00_ContentPlaceHolder_homeButton" class="RadButton RadButton_Default rbButton rbRounded rbIconButton"><span class="rbIcon p-icon rbPrimaryIcon rbCustomIcon" style="background-image:url(&#39;/bdl/App_Themes/Light/ico/home.png&#39;);"></span><span class="rbText">Powr&#243;t do strony gł&#243;wnej</span><input id="ctl00_ContentPlaceHolder_homeButton_ClientState" name="ctl00_ContentPlaceHolder_homeButton_ClientState" type="hidden" /></button>
+    
+        </div>
+
+    
+
+
+            
+            <div class="RadAjaxPanel" id="ctl00_ctl00_SessionTickerPanelPanel">
+	<div id="ctl00_SessionTickerPanel">
+		
+                <span id="ctl00_SessionTicker" style="visibility:hidden;display:none;"></span>
+            
+	</div>
+</div>            
+            
+        </div>
+        <div id="Clearer"></div>             
+        <div id="MainFooter">
+            
+                <a href="http://www.stat.gov.pl/copyright" target="_blank">Copyright &copy; 2022 Główny Urząd Statystyczny.</a>
+                <span class="small">Wersja: 20220121.1331</span>
+                <div class="right">
+                    <a href="/bdl/privacy">Polityka prywatności</a>
+                    <a href="/bdl/accessibility">Deklaracja dostępności</a>
+                    <a href="#" title="Innowacyjna gospodarka"><img src='/bdl/img/ig_65x22.png'/></a>
+                    <a href="http://stat.gov.pl/" target="_blank"><img title="GUS" src='/bdl/img/gus_51x22.png'/></a>                    
+                </div>            
+            
+        </div>
+    </div>    
+        
+    
+
+<script type="text/javascript">
+//<![CDATA[
+;(function() {
+                        function loadHandler() {
+                            var hf = $get('ctl00_StyleManager_TSSM');
+                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
+                            hf.value += ';|637747370477927469:2cc223ef;Telerik.Web.UI, Version=2017.3.913.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4:pl-PL:03e3fdef-45f6-40a0-88ab-9645d53a0f37:d7e35272:505983de:3e0dfe6c:e7750fd8:e347b32f:a942ad92:b256253d:6e804bb4:a957bcf1:ce6e779:ba1b8630:ca0174c4';
+                            Sys.Application.remove_load(loadHandler);
+                        };
+                        Sys.Application.add_load(loadHandler);
+                    })();Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindowManager, {"_renderMode":2,"clientStateFieldID":"ctl00_MainWindowMan_ClientState","enableShadow":true,"formID":"aspnetForm","iconUrl":"","minimizeIconUrl":"","name":"MainWindowMan","skin":"Default","windowControls":"[]"}, null, null, $get("ctl00_MainWindowMan"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadFormDecorator, {"_renderMode":2,"clientStateFieldID":"ctl00_MainFormDecorator_ClientState","decoratedControls":57343,"enableRoundedCorners":false,"enabled":true,"skin":"Default"}, null, null, $get("ctl00_MainFormDecorator"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadToolTipManager, {"_cssClass":"ttipAuto","_manualCloseButtonText":"Close","_renderMode":2,"_updatePanelUniqueId":"ctl00$MainToolTipManRTMPanel","autoCloseDelay":5000,"autoTooltipify":true,"clientStateFieldID":"ctl00_MainToolTipMan_ClientState","formID":"aspnetForm","isToolTipFactory":true,"loadOnDemand":false,"position":23,"relativeTo":1,"skin":"Default","targetControls":"[]"}, null, null, $get("ctl00_MainToolTipMan"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxManager, {"_updatePanels":"","ajaxSettings":[{InitControlID : "ctl00_SessionTicker",UpdatedControls : [{ControlID:"ctl00_SessionTickerPanel",PanelID:""}]}],"clientEvents":{OnRequestStart:"",OnResponseEnd:""},"defaultLoadingPanelID":"","enableAJAX":true,"enableHistory":false,"links":[],"styles":[],"uniqueID":"ctl00$MainAjaxManager","updatePanelsRenderMode":0}, null, null, $get("ctl00_MainAjaxManager"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadNavigation, {"_renderMode":2,"_skin":"Default","clientStateFieldID":"ctl00_MainMenu_ClientState","nodesData":[{"selected":true}]}, null, null, $get("ctl00_MainMenu"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadButton, {"_accessKey":"","_hasIcon":true,"_hasImage":false,"_isClientSubmit":false,"_isImageButton":false,"_navigateUrl":"/bdl/start","_postBackReference":"","_renderMode":2,"clientStateFieldID":"ctl00_ContentPlaceHolder_homeButton_ClientState","iconData":{"primaryIconUrl":"/bdl/App_Themes/Light/ico/home.png"},"imageData":{},"text":"Powrót do strony głównej","toggleStatesData":[],"uniqueGroupName":"","uniqueID":"ctl00$ContentPlaceHolder$homeButton"}, {"clicking":linkButtonClicking}, null, $get("ctl00_ContentPlaceHolder_homeButton"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.UI._Timer, {"enabled":true,"interval":300000,"uniqueID":"ctl00$SessionTicker"}, null, null, $get("ctl00_SessionTicker"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>
+
